@@ -27,7 +27,19 @@
     text-align: center;
 }
 
-input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
     text-align: left;
 }
 
@@ -36,8 +48,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 }
 
 .current,
-.collapsible-header.active,
-.collapsible-header.active:hover {
+.collapsible-header.active .collapsible-header.active:hover {
     background-color: #ef9a9a;
     color: #424242;
 }
@@ -54,7 +65,7 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 
 .btn-delete {
     background-color: #ee6e73;
-    :hover {
+     :hover {
         background-color: #e53935;
     }
 }
