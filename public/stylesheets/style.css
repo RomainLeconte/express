@@ -1,57 +1,60 @@
 /* fallback */
 
 @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v30/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v30/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -moz-font-feature-settings: 'liga';
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
-  text-align: center;
+    text-align: center;
 }
+
 .btn-delete {
-  background-color: #ee6e73;
+    background-color: #ee6e73;
 }
+
 .btn-delete:hover {
-  background-color: #e53935;
+    background-color: #e53935;
 }
+
 .connexion_bloc {
-  float: right;
+    float: right;
 }
 
 .card.small {
-  height: auto;
-  max-width: 300px;
+    height: auto;
+    max-width: 300px;
 }
 
 .connexion_bloc .btn {
-  background-color: transparent;
-  box-shadow: none;
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .central {
-  margin: 0 auto;
-  max-width: 1240px;
-  min-height: calc(100vh - 152.5px);
+    margin: 0 auto;
+    max-width: 1240px;
+    min-height: calc(100vh - 152.5px);
 }
 
 footer p {
-  margin: 0px;
+    margin: 0px;
 }
