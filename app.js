@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var profile = require('./routes/profile');
 var boards = require('./routes/boards');
 var inscription = require('./routes/inscription');
+var login = require('./routes/login');
 var forget = require('./routes/forget');
 
 var dashboard = require('./routes/dashboard');
@@ -34,6 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/profile', profile);
 app.use('/boards', boards);
+app.use('/login', login);
 app.use('/inscription', inscription);
 app.use('/forget', forget);
 
