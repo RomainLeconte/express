@@ -1,0 +1,29 @@
+<% include ./partials/head %>
+
+  <h1><%= title %></h1>
+
+
+    <div class="row">
+      <% for(var i=0; i < boards.length; i++) { %>
+        <div class="col s12 m6">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title"><%= boards[i].titre %></span>
+                    <p><%= boards[i].description %></p>
+                </div>
+                <div class="card-action">
+                    <div class="row">
+                        <p class="col s12 m6"><%= boards[i].pins %> pins</p>
+                        <p class="col s12 m6"><%= boards[i].repins %> repins</p>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a class="btn-large" href="#" onclick="Materialize.toast('ça clique !!!', 1000)">Modifier</a>
+                    <a class="btn-large btn-delete" href="#" onclick="Materialize.toast('ça spam !!!!', 1000)">Suprimer</a>
+                </div>
+            </div>
+        </div>
+        <% } %>
+    </div>
+
+<% include ./partials/footer %>

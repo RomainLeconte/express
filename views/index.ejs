@@ -1,0 +1,31 @@
+<% include ./partials/head %>
+
+  <h1><%= title %></h1>
+  <p>Welcome to<%= title %></p>
+  <div class="row">
+    <% for(var i=0; i < articles.length; i++) { %>
+      <div class="col s12 m6 l3">
+          <div class="card materialboxed">
+              <div class="card-image waves-effect waves-block waves-light">
+                  <img class="activator materialboxed" src=<%= articles[i].image %>>
+              </div>
+              <div class="card-content">
+                  <span class="card-title activator grey-text text-darken-4"><%= articles[i].titre %>
+                      <i class="material-icons right">more_vert</i>
+                  </span>
+                  <p>
+                      <a href="#">This is a link</a>
+                  </p>
+              </div>
+              <div class="card-reveal">
+                  <span class="card-title grey-text text-darken-4"><%= articles[i].titre %>
+                      <i class="material-icons right">close</i>
+                  </span>
+                  <p><%= articles[i].description %></p>
+              </div>
+          </div>
+      </div>
+    <% } %>
+  </div>
+
+<% include ./partials/footer %>

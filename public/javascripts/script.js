@@ -1,0 +1,1 @@
+Materialize.toast('ça clique !!', 4000);
