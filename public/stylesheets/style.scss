@@ -1,0 +1,84 @@
+/* fallback */
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v30/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -moz-font-feature-settings: 'liga';
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    text-align: center;
+}
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+    text-align: left;
+}
+
+.collapsible-header {
+    transition: all 0.5s;
+}
+
+.current,
+.collapsible-header.active,
+.collapsible-header.active:hover {
+    background-color: #ef9a9a;
+    color: #424242;
+}
+
+.collapsible-header.active,
+.collapsible-header.active:hover {
+    color: #fff;
+}
+
+.collapsible-header:hover,
+.card:hover {
+    background-color: #f5f5f5;
+}
+
+.btn-delete {
+    background-color: #ee6e73;
+    :hover {
+        background-color: #e53935;
+    }
+}
+
+.connexion_bloc {
+    float: right;
+}
+
+.card.small {
+    height: auto;
+    max-width: 300px;
+}
+
+.connexion_bloc .btn {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.central {
+    margin: 0 auto;
+    max-width: 1240px;
+    min-height: calc(100vh - 152.5px);
+}
+
+footer p {
+    margin: 0px;
+}
