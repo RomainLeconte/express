@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 JSON.stringify(profileCat);
 
-  res.render('profile', { title: 'Profile', profileCat: profileCat });
+  res.render('profile', { title: 'Profile', profileCat: profileCat, page_name: 'profile' });
 });
 
 module.exports = router;

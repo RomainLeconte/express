@@ -1,21 +1,21 @@
     <nav>
         <ul>
             <li>
-                <a href="/">Home</a>
+                <a <% if (page_name === 'index') { %>class="current" <% } %> href="/">Home</a>
             </li>
             <li>
-                <a href="/profile">Mon profile</a>
+                <a <% if (page_name === 'profile') { %>class="current" <% } %> href="/profile">Mon profile</a>
             </li>
-            <li><a href="/boards">Mes boards</a></li>
+            <li><a <% if (page_name === 'boards') { %>class="current" <% } %> href="/boards">Mes boards</a></li>
         </ul>
 
         <div class="connexion_bloc">
             <ul>
                 <li>
-                    <a href="/login">Connexion</a>
+                    <a <% if (page_name === 'login' || page_name === 'forget') { %>class="current" <% } %> href="/login">Connexion</a>
                 </li>
                  <li>
-                    <a href="/inscription">inscription</a>
+                    <a <% if (page_name === 'inscription') { %>class="current" <% } %> href="/inscription">inscription</a>
                 </li>
             </ul>
         </div>
