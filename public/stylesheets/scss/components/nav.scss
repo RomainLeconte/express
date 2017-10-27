@@ -1,0 +1,37 @@
+.admin {
+    nav {
+        width: 20%;
+        max-width: 300px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        background-color: #616161;
+        @media screen and (max-width: $small) {
+            display: none;
+        }
+        @media screen and (min-width: $medium) {
+            max-width: 20%;
+        }
+        @media screen and (min-width: $large) {
+            max-width: 300px;
+        }
+        ul li {
+            display: block;
+            float: left;
+            width: 100%;
+            a {
+                text-align: left;
+            }
+            .current {
+                background-color: #424242;
+                color: #fff;
+            }
+        }
+    }
+    .connexion_bloc {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+}

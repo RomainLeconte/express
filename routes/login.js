@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('login', { title: 'Login', page_name: 'login' });
+  res.render('login', { title: 'Login', page_name: 'login', role_user: 'User' });
 });
 
 const fakeUser = {email: 'test@test.fr', password: 'test'};

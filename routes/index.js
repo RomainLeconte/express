@@ -16,7 +16,7 @@ router.get('/', function(req, res, next) {
 
 JSON.stringify(articles);
 
-  res.render('index', { title: 'Pinterest', articles: articles, page_name: 'index' });
+  res.render('index', { title: 'Pinterest', articles: articles, page_name: 'index', role_user: 'User' });
 });
 
 module.exports = router;

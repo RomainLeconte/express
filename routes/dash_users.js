@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('dash_users', { title: 'Users', page_name: 'users' });
+  res.render('dash_users', { title: 'Users', page_name: 'users', role_user: 'Admin' });
 });
 
 module.exports = router;

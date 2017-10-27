@@ -1,0 +1,13 @@
+.admin {
+    .central {
+        @media screen and (max-width: $small) {
+            margin-left: 0px;
+        }
+        @media screen and (min-width: $medium) {
+            margin-left: 20%;
+        }
+        @media screen and (min-width: $large) {
+            margin-left: 300px;
+        }
+    }
+}

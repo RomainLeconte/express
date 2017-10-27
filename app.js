@@ -38,10 +38,10 @@ app.use('/login', login);
 app.use('/inscription', inscription);
 app.use('/forget', forget);
 
-app.use('/dashboard/administration', dashboard);
-app.use('/dashboard/users', dash_users);
-app.use('/dashboard/boards', dash_boards);
-app.use('/dashboard/images', dash_images);
+app.use('/administration', dashboard);
+app.use('/administration-users', dash_users);
+app.use('/administration-boards', dash_boards);
+app.use('/administration-images', dash_images);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
