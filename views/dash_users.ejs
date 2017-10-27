@@ -1,6 +1,24 @@
 <% include ./partials/head %>
 
   <h1><%= title %></h1>
-  <p>Welcome to<%= title %></p>
+
+  <ul class="collapsible" data-collapsible="accordion">
+    <% for(var i=0; i < Users.length; i++) { %>
+      <li>
+          <div class="collapsible-header">
+            <i class="material-icons">assignment_ind</i><%= Users[i].id %>
+              <a class="btn-large" href="#" onclick="Materialize.toast('ça clique !!!', 1000)"><i class="material-icons">brightness_5</i></a>
+              <a class="btn-large btn-delete" href="#" onclick="Materialize.toast('ça spam !!!!', 1000)"><i class="material-icons">clear</i></a>
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+               <p>Prénom : <%= Users[i].firstName %></p> <p>Nom : <%= Users[i].lastName %></p><p>Date d'inscription: <%= Users[i].dateInscription %></p>
+               <p>Boards : <%= Users[i].boards %></p> <p>Images : <%= Users[i].images %></p><p>Status : <%= Users[i].status %> <i class="material-icons"><%= Users[i].icon %></i></p>
+            </div>
+          </div>
+        </li>
+      <% } %>
+  </ul>
+
 
 <% include ./partials/footer %>
