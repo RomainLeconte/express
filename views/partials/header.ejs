@@ -35,8 +35,7 @@
     </ul>
 
     <div class="connexion_bloc">
-        <ul>
-            <% if (role_user === 'User') { %>
+        <ul id ="connexion">
                 <li>
                     <a <% if (page_name==='login' || page_name==='forget' ) { %>class="current"
                         <% } %> href="/login">Connexion</a>
@@ -45,12 +44,11 @@
                     <a <% if (page_name==='inscription' ) { %>class="current"
                         <% } %> href="/inscription">inscription</a>
                 </li>
-            <% } %>
-            <% if (role_user === 'Admin') { %>
-                <li>
-                    <a href="/">deconnexion</a>
-                </li>
-            <% } %>
+        </ul>
+        <ul id="deconnection">
+            <li>
+                <a href="/">deconnexion</a>
+            </li>
         </ul>
     </div>
 </nav>

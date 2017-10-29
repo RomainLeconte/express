@@ -24,6 +24,11 @@
 		var form = document.querySelector('form');
 		form.addEventListener("submit", loginUser);
 
+		var loginLink = document.querySelector('#connexion');
+		var deconnexionLink = document.querySelector('#deconnection');
+		deconnexionLink.addEventListener('click', disconnect);
+
+
 		function loginUser(event) {
 			loginUserWithXHR(event);
 		}
@@ -41,6 +46,9 @@
 
 			xhr.onreadystatechange = function () {//Call a function when the state changes.
 				if (xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+					var token = xhr.response;
+					localStorage.setItem('token', token);
+					switchToLoginMode();
 					form.reset();
 				}
 			}
@@ -49,5 +57,18 @@
 			var payLoad = "email=" + email + "&" + "password=" + password;
 			xhr.send(payLoad);
 		}
+
+		function switchToLoginMode() {
+			loginLink.style.display = "none";
+			deconnexionLink.style.display = "block";
+		}
+		function switchToLogoutMode() {
+			loginLink.style.display = "block";
+			deconnexionLink.style.display = "none";
+		}
+		function disconnect() {
+			switchToLogoutMode();
+			localStorage.removeItem('token');
+		}
 	</script>
-	<% include ./partials/footer %>
+	<% include ./partials/footer %> 
