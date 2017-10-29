@@ -5,6 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var jwt = require('jsonwebtoken');
+var expressJwt = require('express-jwt');
 
 var index = require('./routes/index');
 var profile = require('./routes/profile');
@@ -20,6 +21,8 @@ var dash_images = require('./routes/dash_images');
 
 var app = express();
 
+var secret = 'YUN2&-4(-FBVdfz&h_C(4D6(-__46yrtyty5y';
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -31,6 +34,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(expressJwt({ secret: secret}).unless({path: ['/', '/login', '/forget', '/inscription']}));
 
 app.use('/', index);
 app.use('/profile', profile);

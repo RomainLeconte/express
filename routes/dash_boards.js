@@ -21,7 +21,7 @@ JSON.stringify(listBoards, articles);
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('dash_boards', { title: 'Boards',articles: articles, listBoards: listBoards , page_name: 'boards', role_user: 'Admin' });
+  res.render('dash_boards', { title: 'Boards',articles: articles, listBoards: listBoards , page_name: 'boards', role_user: 'Admin'});
 });
 
 module.exports = router;

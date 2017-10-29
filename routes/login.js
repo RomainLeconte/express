@@ -8,7 +8,8 @@ router.get('/', function(req, res, next) {
 });
 
 const fakeUser = {email: 'test@test.fr', password: 'test'};
-const secret = 'YUN2&-4(-FBVdfz&h_C(4D6(-__46yrtyty5y';
+var secret = 'YUN2&-4(-FBVdfz&h_C(4D6(-__46yrtyty5y';
+
 
 /* POST home page. */
 router.post('/', function(req, res, next) {

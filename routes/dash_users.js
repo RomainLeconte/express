@@ -15,7 +15,7 @@ var Users  = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('dash_users', { title: 'Users',Users : Users, page_name: 'users', role_user: 'Admin' });
+  res.render('dash_users', { title: 'Users',Users : Users, page_name: 'users', role_user: 'Admin'});
 });
 
 module.exports = router;

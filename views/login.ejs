@@ -25,9 +25,6 @@
 		form.addEventListener("submit", loginUser);
 
 		var loginLink = document.querySelector('#connexion');
-		var deconnexionLink = document.querySelector('#deconnection');
-		deconnexionLink.addEventListener('click', disconnect);
-
 
 		function loginUser(event) {
 			loginUserWithXHR(event);
@@ -56,19 +53,17 @@
 			var password = document.getElementById('password').value;
 			var payLoad = "email=" + email + "&" + "password=" + password;
 			xhr.send(payLoad);
+
+    		setTimeout('document.location.href="http://localhost:3000/profile"', 2000);
+
 		}
 
 		function switchToLoginMode() {
 			loginLink.style.display = "none";
-			deconnexionLink.style.display = "block";
 		}
 		function switchToLogoutMode() {
 			loginLink.style.display = "block";
 			deconnexionLink.style.display = "none";
-		}
-		function disconnect() {
-			switchToLogoutMode();
-			localStorage.removeItem('token');
 		}
 	</script>
 	<% include ./partials/footer %> 
