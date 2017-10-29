@@ -18,7 +18,7 @@ router.post('/', function(req, res, next) {
    res.sendStatus(500);
  }else{
    if(fakeUser.email === req.body.email && fakeUser.password === req.body.password){
-    const token = jwt.sign({iss:'http://site.fr', user:'Sam', role:'user'}, secret);
+    const token = jwt.sign({iss:'http://site.fr', user:'Sam', role:'User'}, secret);
     res.json(token);
    }else{
      res.sendStatus(401);
